@@ -146,7 +146,7 @@ instance Applicative Coisa where
 
 {- 7.4) Escreva uma instância para Functor e Applicative para o tipo Arvore, visto no capítulo 5 -}
 
-data Arvore a = Nulo | Folha a | Ramo a (Arvore a) (Arvore a) deriving (Show)
+
 
 instance Functor Arvore where
   fmap g Nulo = Nulo
